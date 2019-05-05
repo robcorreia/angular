@@ -1,0 +1,67 @@
+.personal {
+	background-color: #353742;
+	background-image: url('/assets/images/background/bg-businessman.jpg');
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100%;
+}
+.personal .column {
+	padding: 8% 30px 8% 30px;
+	display: inline-block;
+	width: 500px;
+}
+.personal .column h2 {
+	text-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+.personal .column h3 {
+	font-size: 64px;
+	line-height: 74px;
+	color: #FFF;
+	text-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+.personal input#cta {
+	margin-top: 30px;
+	color: #FFF;
+	background-color: #657be6;
+	width: 320px;
+	line-height: 50px;
+	border: 0;
+	cursor: pointer;
+}
+.personal input#cta:hover {
+	background-color: #6683f4;	
+}
+.personal input#cta:active {
+	background-color: #657be6;
+}
+
+@media only screen and (max-width: 1000px) {
+	.personal .column {
+		width: 100%;
+		text-align: center;
+	}
+
+	.personal .column h2,
+	.personal .column h3 {
+		margin: 50px 0;
+	}
+	.personal .column h3 {
+		font-size: 48px;
+		line-height: 58px;
+	}
+}
+
+@media only screen and (max-width: 740px) {
+	.personal .column h3 {
+		font-size: 38px;
+		line-height: 48px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.personal .column h3 {
+		font-size: 36px;
+		line-height: 48px;
+	}
+}

@@ -1,0 +1,17 @@
+<form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+  <div fxFlex fxLayout="column">
+    <mat-form-field>
+      <input matInput #name placeholder="Nome" formControlName="name" required>
+      <mat-icon matSuffix>person</mat-icon>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput #cpf placeholder="Cpf" formControlName="cpf" required>
+      <mat-icon matSuffix>person</mat-icon>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput #phone placeholder="Phone" formControlName="phone" required>
+      <mat-icon matSuffix>person</mat-icon>
+    </mat-form-field>
+    <button mat-raised-button color="primary">Comprar</button>
+  </div>
+</form>

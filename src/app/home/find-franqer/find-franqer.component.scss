@@ -1,0 +1,43 @@
+.find-container {
+    height: 1080px;
+    width: 100%;
+}
+
+.find-text {
+    background: url(../../../assets/images/bg-find-franqer.svg) left no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 10% 0;
+}
+
+.find-text h2 {
+    font-size: 5.700em;
+    color: #ffffff;
+}
+
+.find-text p {
+    font-size: 2.200em;
+    color: #F6F4F0;
+    margin: 20% 0;
+}
+
+.find-text .find-input {
+    height: 101px;
+}
+
+.find-text .find-input input {
+    border: none;
+    font-size: 2.900em;
+    padding-left: 5%;
+}
+
+.find-text .search-button {
+    background: #000000 url('/assets/images/search.svg') center no-repeat;
+    border: none;
+}
+
+.find-map {
+    background: url(../../../assets/images/bg-map.png) center no-repeat;
+    background-size: cover;
+    height: 100%;
+}

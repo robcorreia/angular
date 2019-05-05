@@ -1,0 +1,59 @@
+
+/*SECTION ABOUT */
+.franqer-about {
+  background-color: #FFFFFF;
+}
+
+.about-content {
+  margin-top: 15%;
+}
+
+.about-content h4 {
+  font-size: 1.8em;
+  color: #191919;
+  letter-spacing: 5px;
+  margin-bottom: 5px;
+}
+
+.about-content h2 {
+  font-size: 3.2em;
+  color: #5F7DEF;
+  letter-spacing: 5px;
+  font-weight: normal;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.about-content h2:after {
+  content: '';
+  position: absolute;
+  background: #5F7DEF;
+  height: 2px;
+  width: 77px;
+  bottom: -36px;
+  left: 0;
+}
+
+.about-content p {
+  max-width: 668px;
+  font-size: 1.3em;
+  color: #191919;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+
+}
+
+@media only screen and (max-width: 740px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}

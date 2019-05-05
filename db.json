@@ -1,0 +1,37 @@
+{
+  "products": [
+    {
+      "url": "http://franqcore-dev.qmxnewrbfq.us-east-1.elasticbeanstalk.com/api/v1/products/1/",
+      "pk": 1,
+      "brand": {
+        "url": "http://franqcore-dev.qmxnewrbfq.us-east-1.elasticbeanstalk.com/api/v1/brands/1/",
+        "pk": 1,
+        "name": "Bradesco",
+        "description": "Bradesco é um banco grande.",
+        "category": 2,
+        "image": "https://fbank-repository.s3.amazonaws.com/media/brands/Logo_Bradesco_2009.png",
+        "site": "https://www.bradesco.com.br"
+      },
+      "title": "Cartão Nubank",
+      "slug": "cartao-nubank",
+      "image": "https://fbank-repository.s3.amazonaws.com/media/products/nubank.png",
+      "franqer_detail": "",
+      "sku": null,
+      "tracker": null,
+      "link": "https://nubank.com.br/",
+      "active": true
+    }
+  ],
+  "franqer": {
+    "url": "http://0.0.0.0:8000/api/v1/franqers/1/",
+    "pk": 1,
+    "name": "Paulo Guedes",
+    "nickname": "paulo-guedes",
+    "profession": "Ministro da Economia",
+    "email": "paulo.guedes@gmail.com",
+    "phone": "(48) 99999-9999",
+    "biography": "Ministro da Economia",
+    "resume": "Ministro da Economia",
+    "image": "https://i.imgur.com/xNHJKHm.png"
+  }
+}

@@ -1,0 +1,357 @@
+.finance {
+  width: 100%;
+  background: url(../../../assets/images/bkg-section-2.png) center no-repeat;
+  background-size: cover;
+  height: 800px;
+  padding-top: 40px;
+}
+
+.finance-controller {
+  width: 100%;
+  padding: 20px;
+  background: #FFFFFF;
+  height: auto;
+}
+
+.content {
+  display: inline-grid;
+}
+
+.finance .content .row {
+  margin-left: 20px;
+}
+
+.title-products {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-family: 'gilroy-semibold';
+  color: #32323C;
+}
+
+.item {
+  position: relative;
+  transition: 0.5s;
+  border-bottom: 1px solid #999EB7;
+  padding: 10px;
+}
+
+.item .row {
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+}
+
+
+.item .btn-favorite {
+  visibility: hidden;
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 134px;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.item:hover {
+  border: 1.5px solid #5F7DEF;
+  border-radius: 5px;
+  transform: scale(1.010);
+  background: rgba(95, 125, 239, 0.2);
+}
+
+.item .btn-favorite button {
+  border: none;
+  background: transparent;
+  width: 134px;
+  height: 45px;
+  background: url(../../../assets/images/btn-favorite.png) center no-repeat;
+}
+
+.item:hover .btn-favorite {
+  visibility: visible;
+  opacity: 1;
+}
+
+.scroll-list {
+  z-index: -1;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.style-bar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.style-bar::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.style-bar::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #E1E2EB;
+}
+
+
+.content h2 {
+  color: #32323C;
+  font-size: 2.2em;
+  display: block;
+  margin-bottom: 35px;
+  margin-top: 25px;
+  padding-left: 20px;
+}
+
+.finance .content p {
+  color: #32323C;
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.finance .content .item {
+  width: 100%;
+  height: 172px;
+  padding: 20px 0px;
+  position: relative;
+}
+
+.info-1,
+.info-2,
+.info-3,
+.finance-share {
+  // TODO: botar um margin
+  display: inline-grid;
+}
+
+.info-1 span {
+  font-size: 9px;
+  font-family: 'gilroy-semibold';
+}
+
+.info-column-title {
+  font-size: 9px;
+  font-family: 'gilroy-regular';
+  color: #5F7DEF;
+}
+
+.info-2 #info-2-income-description-1 {
+  font-size: 10px;
+  font-family: 'gilroy-semibold';
+  color: #32323C;
+}
+
+.info-2 #info-2-income-description-2 {
+  font-size: 9px;
+  font-family: 'gilroy-semibold';
+  color: #5F7DEF;
+}
+
+.midia-black {
+  display: inline-block;
+  margin: 10px 0;
+  transition: 0.5s;
+}
+
+.midia-black:hover {
+  opacity: 0.5;
+}
+
+.midia-black img {
+  display: block;
+  width: 26px;
+  height: 26px;
+}
+
+.finance-share p {
+  text-transform: uppercase;
+}
+
+.finance .content .cred-card img {
+  width: 100%;
+  max-width: 204px;
+  padding-top: 20px;
+  height: auto;
+}
+
+.finance .content .info-1 span {
+  position: relative;
+}
+
+.finance .content .info-1 span:before {
+  content: '';
+  position: absolute;
+  background: url(../../../assets/images/check-blue.png) no-repeat;
+  width: 20px;
+  height: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -15px;
+}
+
+.finance .content .info-3 {
+  padding-top: 30px;
+}
+
+.finance .content .finance-share {
+  padding-top: 50px;
+  margin-left: 0;
+}
+
+.finance .content .finance-share p {
+  margin-bottom: 5px;
+}
+
+.container > tabs {
+	text-align: right;
+}
+
+.tabs {
+	margin-top: 20px;
+	width: 100%;
+	position: relative;
+	background-color: #FAFAFA;
+	float: left;
+	clear: both;
+}
+.tabs .tab {
+	clear: both;
+	width: 100px;
+}
+.tabs .tab label {
+	display: inline-block;
+	text-decoration: none;
+	font-family: poynter-oldstyle-text, serif;
+	font-weight: 700;
+	font-size: 18px;
+	background: #FAFAFA;
+	padding: 0 20px 0 66px;
+	color: #555;
+	width: 250px;
+	height: 100px;
+	line-height: 100px;
+	white-space: nowrap;
+	border-right: 1px solid #DDD;
+	 box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	background-position: 20px center;
+	background-repeat: no-repeat;
+	background-size: 32px 32px;
+}
+.tabs .border-bottom label {
+	border-bottom: 1px solid #DDD;
+}
+.tabs .tab .content {
+	position: absolute;
+	top: 0;
+	left: 250px;
+	right: 0;
+	bottom: 0;
+	padding: 50px;
+	background-color: #FAFAFA;
+}
+.tabs .tab .content .a-products {
+	font-size: 16px;
+	line-height: 32px;
+	color: #555;
+}
+.tabs .tab [type=radio] {
+	display: none;
+}
+[type=radio]:checked ~ label {
+	background-color: #657be6 !important;
+	z-index: 2 !important;
+	color: #FFF !important;
+	position: relative !important;
+}
+[type=radio]:checked ~ label ~ .content {
+	z-index: 1;
+}
+[type=radio]:checked ~ label:after {
+	position: absolute;
+	content: '';
+	border: 50px solid transparent;
+	border-left: 20px solid #657be6;
+	top: 0;
+	right: -70px;
+	z-index: 1000;
+}
+.tabs .tab .credit {
+	background-image: url('../../../assets/images/elements/icon-credit.svg');
+}
+.tabs .tab .insurance {
+	background-image: url('../../../assets/images/elements/icon-insurance.svg');
+}
+.tabs .tab .investiment {
+	background-image: url('../../../assets/images/elements/icon-investiment.svg');
+}
+.tabs .tab .cards {
+	background-image: url('../../../assets/images/elements/icon-cards.svg');
+}
+.tabs .tab .companies {
+	background-image: url('../../../assets/images/elements/icon-companies.svg');
+}
+[type=radio]:checked ~ label.credit {
+	background-image: url('../../../assets/images/elements/icon-credit-white.svg') !important;
+}
+[type=radio]:checked ~ label.insurance {
+	background-image: url('../../../assets/images/elements/icon-insurance-white.svg') !important;
+}
+[type=radio]:checked ~ label.investiment {
+	background-image: url('../../../assets/images/elements/icon-investiment-white.svg') !important;
+}
+[type=radio]:checked ~ label.cards {
+	background-image: url('../../../assets/images/elements/icon-cards-white.svg') !important;
+}
+[type=radio]:checked ~ label.companies {
+	background-image: url('../../../assets/images/elements/icon-companies-white.svg') !important;
+}
+
+
+@media only screen and (max-width: 740px) {
+	.tabs {
+		width: 456px;
+	}
+	.tabs .tab label {
+		width: 180px;
+		font-size: 14px;
+		padding: 0 20px 0 66px;
+		background-position: 16px center;
+		background-size: 24px 24px;
+		background-repeat: no-repeat;
+	}
+	.tabs .tab .content {
+		left: 200px;
+		padding: 20px 20px 20px 30px;
+	}
+	.tabs .tab .content p {
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.tabs {
+		width: 356px;
+	}
+	.tabs .tab label,
+	[type=radio]:checked ~ label {
+		width: 90px;
+		color: transparent !important;
+		background-position: 28px center;
+	}
+	.tabs .tab .content {
+		left: 100px;
+		padding: 20px 20px 20px 30px;
+	}
+}

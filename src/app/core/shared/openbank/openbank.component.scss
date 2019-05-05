@@ -1,0 +1,76 @@
+.openbank {
+	padding: 15px;
+	background-color: #FFF;
+	background-image: url('/assets/images/background/bg-gradient-white.svg'), url('/assets/images/background/bg-effects-parts.svg');
+	background-position: center center, center center;
+	background-repeat: no-repeat, no-repeat;
+	background-size: cover, cover;
+}
+.openbank-columnA {
+	display: inline-block;
+	width: 45%;
+}
+.openbank-columnB {
+	display: inline-block;
+	width: 50%;
+}
+.openbank-columnB img {
+	margin: 20px 40px 20px 0;
+	width: 100%;
+}
+.openbank-partners ul {
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 800px;
+}
+.openbank-partners ul li {
+	display: inline-block;
+	padding: 10px;
+	margin: 0;
+	width: 32%;
+}
+.openbank-partners ul li img {
+	width: 100%;
+}
+.openbank .slider {
+	width: 800px;
+	height: 260px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.openbank-columnA,
+	.openbank-columnB {
+		width: 100%
+	}
+	.openbank-columnB img {
+		width: 80%;
+	}
+	.openbank-partners {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 740px) {
+	.openbank-partners ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+	.openbank-partners ul li img {
+		/* height: 42px; */
+	}
+	.openbank .slider {
+		width: 100%;
+		height: 230px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.openbank .slider {
+		width: 100%;
+		height: 180px;
+	}
+}

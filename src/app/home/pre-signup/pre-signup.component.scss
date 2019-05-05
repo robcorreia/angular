@@ -1,0 +1,105 @@
+.principal {
+	background-color: #353742;
+	background-image: url('../../../assets/images/background/bg-franq.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100%;
+}
+.principal .headline {
+	padding: 20% 30px 0 30px;
+}
+.principal .headline h3 {
+	font-size: 52px;
+	line-height: 56px;
+	font-weight: 700;
+	color: #fff;
+	width: 520px;
+	text-shadow: 0 0 12px rgba(0,0,0,0.5);
+	margin-left: 10px;
+}
+.principal div.form {
+	background-color: #353742;
+	border-radius: 4px;
+	padding: 15px;
+	width: 500px;
+	margin: 60px 30px;
+}
+.principal div.form input#name,
+.principal div.form input#email {
+	border: 0;
+	color: #000;
+	font-size: 14px;
+	padding: 10px 20px;
+}
+.principal div.form input#name {
+	width: 180px;
+}
+.principal div.form input#email {
+	width: 280px;
+	margin-left: 5px;
+}
+.principal div.form input#send {
+	margin-top: 10px;
+	color: #FFF;
+	background-color: #657be6;
+	width: 469px;
+	line-height: 50px;
+	border: 0;
+	cursor: pointer;
+}
+.principal div.form input#send:hover {
+	background-color: #6683f4;	
+}
+.principal div.form input#send:active {
+	background-color: #657be6;
+}
+
+@media only screen and (max-width: 1000px) {
+	.principal .headline {
+		padding-top: 25% 10%;
+	}
+	.principal .headline h3 {
+		width: 100%;
+		margin-left: 0;
+		text-align: center;
+	}
+	.principal div.form {
+		position: relative;
+		margin-left: -250px;
+		left: 50%;
+	}
+	.principal div.form input#name {
+		width: 100%;
+	}
+	.principal div.form input#email {
+		width: 100%;
+		margin: 10px 0 0 0;
+	}
+}
+
+@media only screen and (max-width: 740px) {
+	.principal .headline h3 {
+		font-size: 38px;
+		line-height: 42px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.principal .headline {
+		padding-top: 50%;
+	}
+	.principal .headline h3 {
+		font-size: 32px;
+		line-height: 36px;
+	}
+	.principal div.form {
+		width: 100%;
+		position: auto;
+		margin: 50px 0;
+		left: auto;
+	}
+	.principal div.form input#send {
+		width: 100%;
+	}
+}

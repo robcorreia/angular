@@ -1,0 +1,22 @@
+<section class="franqer-about" fxLayout="row" id="about">
+  <div fxFlex="50" fxLayoutAlign="center start">
+    <div fxFlex="80" class="about-content">
+      <h4>{{ franqer?.name }}</h4>
+      <h2>Sobre mim</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean urna erat, placerat id lectus
+        lobortis, viverra mattis libero. In lectus libero, interdum eget enim vitae, congue ornare erat.
+        Etiam condimentum eros eget metus venenatis porttitor. Sed sit amet sagittis nisl. Nulla dictum
+        libero ac purus luctus aliquam.</p>
+      <p>Praesent scelerisque, risus non mollis tempor, sem magna aliquam arcu, eget molestie lectus est
+        id mauris. Quisque tempor ligula nisi, vitae mattis tortor viverra sed. Sed consectetur feugiat
+        erat, sed tempus massa dictum at. Cras ac congue diam.</p>
+      <p>Etiam condimentum eros eget metus venenatis porttitor. Sed sit amet sagittis nisl. Nulla dictum
+        libero ac purus luctus aliquam. Quisque tempor ligula nisi, vitae mattis tortor viverra sed.</p>
+      <p>Um abraço,</p>
+      <img class="about-signature" src="../../../assets/images/signature.png" alt="signature">
+    </div>
+  </div>
+  <div fxFlex="50">
+    <img [src]="franqer?.image.medium_square_crop" alt="Image About">
+  </div>
+</section>

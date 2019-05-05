@@ -1,0 +1,32 @@
+<header 
+  id="headerBar" 
+  [ngClass]="isTop ? 'big_bar' : 'mini_bar'" 
+  class="{{ isFranqPage ? 'intern' : '' }}" 
+  class="animated fade-in delay-4"
+>
+  <div class="container full-width">
+    <a [href]="pathName + '#'">
+      <div class="logo-franq">
+        <div class="piece delay-5"></div>
+      </div>
+      <div class="logotype"></div>
+    </a>
+    
+    <ul id="menu" *ngIf="!isFranqPage" >
+      <li><a href="#openbank">O que é Openbank</a></li>
+      <li><a href="#products">Serviços</a></li>
+      <li><a href="#personal">Personal Bankers</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <!--<li><a href="#" class="cta">Abra uma conta grátis</a></li>-->
+    </ul>
+
+    <ul id="menu" *ngIf="isFranqPage" >
+        <li><a [href]="pathName + '#detail'">Sobre {{ franquerName }}</a></li>
+        <li><a [href]="pathName + '#products'">Produtos e serviços</a></li>
+        <li><a [href]="pathName + '#openbank'">O que é Openbank</a></li>
+        <li><a [href]="pathName + '#franq'">Franq</a></li>
+        <li><a href="#" class="cta">Abra uma conta grátis</a></li>
+      </ul>
+    <button onclick="showMenu()"></button>
+  </div>
+</header>

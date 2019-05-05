@@ -1,0 +1,112 @@
+.faq {
+	background-color: #d0d3e0;
+	background-image: url('/assets/images/background/bg-quotes.svg');
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 1200px 600px;
+	padding-bottom: 50px;
+}
+.faq .faq_title {
+	padding: 80px 0 50px 0;
+	text-align: center;
+}
+.faq .faq_title h3 {
+	color: #FFF;
+	font-size: 48px;
+	line-height: 56px;
+	margin: 0;
+}
+.faq .faq_boxes {
+	width: 100%;
+	margin-bottom: 40px;
+}
+.faq .faq_boxes > * {
+	vertical-align: top;
+}
+.faq .faq_boxes span {
+	display: inline-block;
+	width: 47%;
+	margin: 1%;
+	background-color: #FFF;
+	margin-bottom: 1px;
+	color: #fff;
+	overflow: hidden;
+}
+.faq .faq_boxes span input {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+.faq .faq_boxes span label {
+	position: relative;
+	display: block;
+	padding: 26px 70px 26px 40px;
+	background: #EDF0F8;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 24px;
+	cursor: pointer;
+	color: #555;
+}
+.faq .faq_boxes span input:checked ~ .tab-content {
+	max-height: 100vh;
+}
+.faq .faq_boxes span label::after {
+	font-weight: 100;
+	font-size: 30px;
+	position: absolute;
+	margin: 20px;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 36px;
+	height: 36px;
+	line-height: 28px;
+	text-align: center;
+	-webkit-transition: all .35s;
+	-o-transition: all .35s;
+	transition: all .35s;
+	border: 2px solid #5f7def;
+}
+.faq .faq_boxes span input[type=checkbox] + label::after {
+	content: "+";
+	color: #5f7def;
+}
+.faq .faq_boxes span input[type=checkbox]:checked + label::after {
+	content: "–";
+	font-weight: 500;
+	transform: rotate(180deg);
+}
+.faq .faq_boxes span div.tab-content {
+	max-height: 0;
+	overflow: hidden;
+	background: #FFFFFF;
+	-webkit-transition: max-height .35s;
+	-o-transition: max-height .35s;
+	transition: max-height .35s;
+}
+.faq .faq_boxes span div.tab-content p {
+	margin: 20px 40px;
+	font-size: 13px;
+	line-height: 22px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.faq .faq_title h3 {
+		color: #FFF;
+		font-size: 36px;
+		line-height: 46px;
+	}
+	.faq .faq_boxes span {
+		width: 100%;
+		margin: 10px 0;
+	}
+}
+
+@media only screen and (max-width: 740px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+	
+}

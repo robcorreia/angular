@@ -1,0 +1,202 @@
+.franqer-personal {
+  border-radius: 50%;
+  width: 138px;
+}
+
+.franqer {
+  background: url(../../../assets/images/img-001.png) center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.franqer .btn-up {
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+  background: url(../../../assets/images/btn-up.png) center no-repeat;
+  width: 116px;
+  height: 37px;
+  display: block;
+}
+
+.franqer h4 {
+  color: #32323C;
+  font-size: 2.1em;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: left;
+}
+
+.current-franqer {
+  display: inline-block;
+}
+
+.current-franqer img {
+  max-width: 205px;
+}
+
+.info-page {
+  display: inline-grid;
+  border-right: 1px solid #B9BDD1;
+  height: 200px;
+}
+
+.info-page #info-page-title {
+  font-size: 1em;
+  color: #32323C;
+}
+
+.info-page #franqer-name {
+  font-size: 20px;
+  color: #32323C;
+}
+
+.info-page #franqer-profession {
+  font-size: 20px;
+  color: #32323C;
+}
+
+.info-page a {
+  display: block;
+  color: #5F7DEF;
+  transition: 0.5s;
+  font-size: 9px;
+  transition: 0.5s;
+}
+
+.info-page a:hover {
+  opacity: 0.75;
+}
+
+.info-franqer {
+  display: inline-grid;
+}
+
+.info-franqer #info-franqer-title {
+  font-size: 13px;
+  color: #32323C;
+}
+
+.info-franqer span {
+  color: #707070;
+  font-size: 8px;
+  text-align: left;
+}
+
+.info-franqer a {
+  color: #5F7DEF;
+  transition: 0.5s;
+  font-size: 9px;
+}
+
+.info-franqer a:hover {
+  opacity: 0.75;
+}
+
+.contact-franqer {
+  border-left: 1px solid #B9BDD1;
+  height: 200px;
+}
+
+.contact-franqer #contact-franqer-title {
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.contact-franqer a {
+  text-decoration: none;
+}
+
+.contact-franqer a:hover .contact-item {
+  opacity: 0.75;
+}
+
+.contact-franqer .contact-item {
+  width: 100%;
+  max-width: 208px;
+  height: 38px;
+  overflow: auto;
+  position: relative;
+  background: #F7F8FD;
+  margin-bottom: 10px;
+}
+
+.contact-franqer .contact-item span {
+  margin-left: 35px;
+  margin-top: 7px;
+  color: #707070;
+  font-size: 11px;
+  text-align: justify;
+  display: block;
+}
+
+.contact-item::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+.contact-item.phone::before {
+  background: url(../../../assets/images/ico-whatsapp.png) center no-repeat;
+}
+
+.contact-item.email::before {
+  background: url(../../../assets/images/ico-email.png) center no-repeat;
+}
+
+.share-franqer {
+  border-left: 1px solid #B9BDD1;
+  height: 200px;
+}
+
+.share-franqer .social {
+  margin-left: 30px;
+  padding-bottom: 20px;
+}
+
+.share-franqer .social #share-page {
+  display: inline-block;
+  font-size: 8px;
+}
+
+.share-franqer .assistant {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.share-franqer .assistant img {
+  display: block;
+  margin: 0 auto;
+  max-width: 53px;
+  max-height: 53px;
+}
+
+.share-franqer .assistant span {
+  display: block;
+  text-align: left;
+  font-size: 9px;
+}
+
+.share-franqer .assistant #franqer-assistant-name {
+  font-size: 13px;
+}
+
+.share-franqer .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #B9BDD1;
+}
+
+@media only screen and (max-width: 1000px) {
+
+}
+
+@media only screen and (max-width: 740px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}

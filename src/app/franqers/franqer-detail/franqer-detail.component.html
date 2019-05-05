@@ -1,0 +1,64 @@
+<section class="franqer">
+  <a class="btn-up"></a>
+  <div class="container">
+    <div class="current-franqer grid-2">
+      <img class="franqer-personal" [src]="franqer?.image.thumbnail" alt="">
+    </div>
+    <div class="info-page grid-2">
+      <span id="info-page-title">Página de</span>
+      <span id="franqer-name">{{ franqer?.name }}</span>
+      <span id="franqer-profession-">{{ franqer?.profession }}</span>
+      <img src="../../../assets/images/img-003.png" alt="">
+      <a href="">Ver avaliações sobre Lauro</a>
+    </div>
+    <div class="info-franqer grid-2">
+      <span id="info-franqer-title">Sobre {{ getFirstName(franqer?.name) }}</span>
+
+      <!-- TODO: fazer a trativa para o resumo do franqer -->
+      <span>Bacharel em Economia</span>
+      <span>25 anos de mercado</span>
+      <span>Ex Gerente geral Itau</span>
+      <span>Certificaçoes: CPA 10 e CPA 20</span>
+      <a href="">Saiba mais</a>
+    </div>
+    <div class="contact-franqer grid-2">
+      <span id="contact-franqer-title">Entre em contato com {{ getFirstName(franqer?.name) }}</span>
+      <a [href]="getWhatsappLink(franqer?.phone)" target="_blank">
+        <div class="contact-item phone">
+          <span>{{ franqer?.phone }}</span>
+        </div>
+      </a>
+      <div class="contact-item email">
+        <span>{{ franqer?.email }}</span>
+      </div>
+    </div>
+    <div class="share-franqer grid-2">
+      <div class="row">
+        <div class="social">
+          <span id="share-page">Compartilhar página</span>
+          <div class="social-media">
+              <share-buttons
+                [theme]="'franq'"
+                [include]="['facebook','linkedin','whatsapp','email']"
+                [show]="4"
+                [size]="-14"
+                [url]="shareLink"
+                [autoSetMeta]="false"
+              ></share-buttons>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="assistant">
+          <div class="grid-5">
+            <img [src]="franqer?.assistant?.image.thumbnail" alt="">
+          </div>
+          <div class="grid-7">
+            <span>Assistente:</span>
+            <span id="franqer-assistant-name">{{ franqer?.assistant?.name }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

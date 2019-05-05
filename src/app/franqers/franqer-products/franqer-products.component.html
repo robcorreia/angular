@@ -1,0 +1,100 @@
+<section class="finance" id="products">
+  <div class="finance-controller container">
+    <div class="tabs">
+      <div class="tab border-bottom">
+        <input type="radio" id="tab-1" name="tab_products" checked="checked">
+        <label for="tab-1" class="credit">Crédito</label>
+        <div class="content">
+          <ul>
+            <li><a class="a-products" href="#">Consórcio</a></li>
+            <li><a class="a-products" href="#">Crédito com Garantia</a></li>
+            <li><a class="a-products" href="#">Crédito sem Garantia</a></li>
+            <li><a class="a-products" href="#">Crédito imobiliário</a></li>
+            <li><a class="a-products" href="#">Financiamento de veículos</a></li>
+            <li><a class="a-products" href="#">Peer-to-peer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab border-bottom">
+        <input type="radio" id="tab-2" name="tab_products">
+        <label for="tab-2" class="insurance">Seguro</label>
+        <div class="content">
+          <p>As Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        </div>
+      </div>
+      <div class="tab border-bottom">
+        <input type="radio" id="tab-3" name="tab_products">
+        <label for="tab-3" class="investiment">Investimentos</label>
+        <div class="content">
+          <p>Aasdas sorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        </div>
+      </div>
+      <div class="tab border-bottom">
+        <input type="radio" id="tab-4" name="tab_products">
+        <label for="tab-4" class="cards">Cartões</label>
+        <div class="content">
+            <span class="title-products">Cartões recomendados por {{ getFirstName(franqer?.name) }}</span>
+            <div class="scroll-list style-bar">
+              <div *ngFor="let item of products" class="item">
+                <div class="btn-favorite">
+                  <button></button>
+                </div>
+                <div class="row">
+                  <div class="row grid-2">
+                    <div class="cred-card">
+                      <img [src]="item.image?.thumbnail" alt="">
+                    </div>
+                  </div>
+                  <div class="row grid-2">
+                    <div class="info-1">
+                      <span>Livre de anuidade</span>
+                      <span>Descontos na rede de parcerias</span>
+                    </div>
+                  </div>
+                  <div class="row grid-2">
+                    <div class="info-2">
+                      <span class="upper info-column-title">Renda mínima mensal:</span>
+                      <span id="info-2-income-description-1">Sem conta corrente R$954,00</span>
+                      <span id="info-2-income-description-2">Anuidade: 0</span>
+                    </div>
+                  </div>
+                  <div class="row grid-3">
+                    <div class="info-3">
+                      <a class="btn" href="">Mais informações</a>
+                      <button class="btn btn-blue" (click)="openDialog(item)">Comprar</button>
+                    </div>
+                  </div>
+                  <div class="row grid-2">
+                    <div class="finance-share">
+                      <span class="upper info-column-title">Compartilhe</span>
+                      <div>
+                        <a class="midia-black" href="">
+                          <img src="../../../assets/images/ico-facebook-black.png" alt="Facebook">
+                        </a>
+                        <a class="midia-black" href="">
+                          <img src="../../../assets/images/ico-whatsapp-black.png" alt="WhatsApp">
+                        </a>
+                        <a class="midia-black" href="">
+                          <img src="../../../assets/images/ico-linkedin-black.png" alt="Linkedin">
+                        </a>
+                        <a class="midia-black" href="">
+                          <img src="../../../assets/images/ico-email-black.png" alt="Email">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab last">
+        <input type="radio" id="tab-5" name="tab_products">
+        <label for="tab-5" class="companies">Pessoa Jurídica</label>
+        <div class="content">
+          <p>Simply dummy text of the printing and typesetting industry</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

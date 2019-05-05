@@ -1,0 +1,40 @@
+image: python:latest
+
+variables:
+  AWS_REGION: us-east-1
+  BUCKET_NAME: franqer-marketplaces
+
+stages:
+  - build
+  - deploy
+
+build_webapp:
+  image: node:latest
+  stage: build
+  only:
+    refs:
+      - master
+  before_script:
+    - npm install -g yarn
+    - yarn add node-sass
+    - yarn global add @angular/cli
+  script:
+    - yarn
+    - ng build --prod
+  artifacts:
+    paths:
+      - dist/
+
+deploy_s3:
+  image: python:latest
+  stage: deploy
+  only:
+    refs:
+      - master
+  before_script:
+    - pip install awscli
+  script:
+    - aws s3 sync dist/franq-web s3://${BUCKET_NAME} --delete
+  tags:
+    - docker
+  

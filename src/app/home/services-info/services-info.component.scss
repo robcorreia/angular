@@ -1,0 +1,179 @@
+.products {
+	height: 100%;
+	min-height: 800px;
+	padding: 50px;
+	background-color: #FFF;
+	background-image: url('/assets/images/background/woman-arms.jpg');
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.products .container > tabs {
+	text-align: right;
+}
+.products .products_title h3 {
+	width: 600px;
+	margin-top: 20px;
+	font-size: 28px;
+	line-height: 40px;
+	color: #555;
+	float: right;
+	clear: both;
+}
+.products .tabs {
+	margin-top: 20px;
+	width: 600px;
+	position: relative;
+	background-color: #FAFAFA;
+	float: right;
+	clear: both;
+}
+.products .tabs .tab {
+	clear: both;
+	width: 100px;
+}
+.products .tabs .tab label {
+	display: inline-block;
+	text-decoration: none;
+	font-family: poynter-oldstyle-text, serif;
+	font-weight: 700;
+	font-size: 18px;
+	background: #FAFAFA;
+	padding: 0 20px 0 66px;
+	color: #555;
+	width: 250px;
+	height: 100px;
+	line-height: 100px;
+	white-space: nowrap;
+	border-right: 1px solid #DDD;
+	 box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	background-position: 20px center;
+	background-repeat: no-repeat;
+	background-size: 32px 32px;
+}
+.products .tabs .border-bottom label {
+	border-bottom: 1px solid #DDD;
+}
+.products .tabs .tab .content {
+	position: absolute;
+	top: 0;
+	left: 250px;
+	right: 0;
+	bottom: 0;
+	padding: 50px;
+	background-color: #FAFAFA;
+}
+.products .tabs .tab .content a {
+	font-size: 16px;
+	line-height: 32px;
+	color: #555;
+}
+.products .tabs .tab [type=radio] {
+	display: none;	 
+}
+.products [type=radio]:checked ~ label {
+	background-color: #657be6 !important;
+	z-index: 2 !important;
+	color: #FFF !important;
+	position: relative !important;
+}
+.products [type=radio]:checked ~ label ~ .content {
+	z-index: 1;
+}
+.products [type=radio]:checked ~ label:after {
+	position: absolute;
+	content: '';
+	border: 50px solid transparent;
+	border-left: 20px solid #657be6;
+	top: 0;
+	right: -70px;
+	z-index: 1000;
+}
+.products .tabs .tab .credit {
+	background-image: url('/assets/images/elements/icon-credit.svg');
+}
+.products .tabs .tab .insurance {
+	background-image: url('/assets/images/elements/icon-insurance.svg');
+}
+.products .tabs .tab .investiment {
+	background-image: url('/assets/images/elements/icon-investiment.svg');
+}
+.products .tabs .tab .cards {
+	background-image: url('/assets/images/elements/icon-cards.svg');
+}
+.products .tabs .tab .companies {
+	background-image: url('/assets/images/elements/icon-companies.svg');
+}
+.products [type=radio]:checked ~ label.credit {
+	background-image: url('/assets/images/elements/icon-credit-white.svg') !important;
+}
+.products [type=radio]:checked ~ label.insurance {
+	background-image: url('/assets/images/elements/icon-insurance-white.svg') !important;
+}
+.products [type=radio]:checked ~ label.investiment {
+	background-image: url('/assets/images/elements/icon-investiment-white.svg') !important;
+}
+.products [type=radio]:checked ~ label.cards {
+	background-image: url('/assets/images/elements/icon-cards-white.svg') !important;
+}
+.products [type=radio]:checked ~ label.companies {
+	background-image: url('/assets/images/elements/icon-companies-white.svg') !important;
+}
+
+@media only screen and (max-width: 1000px) {
+	.products {
+		background-position: right center;
+	}
+}
+
+@media only screen and (max-width: 740px) {
+	.products {
+		padding: 10px;
+	}
+	.products .products_title h3 {
+		width: 480px;
+	}
+	.products .tabs {
+		width: 456px;
+	}
+	.products .tabs .tab label {
+		width: 180px;
+		font-size: 14px;
+		padding: 0 20px 0 66px;
+		background-position: 16px center;
+		background-size: 24px 24px;
+		background-repeat: no-repeat;
+	}
+	.products .tabs .tab .content {
+		left: 200px;
+		padding: 20px 20px 20px 30px;
+	}
+	.products .tabs .tab .content p {
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.products {
+		padding: 10px;
+	}
+	.products .products_title h3 {
+		width: 380px;
+	}
+	.products .tabs {
+		width: 356px;
+	}
+	.products .tabs .tab label,
+	.products [type=radio]:checked ~ label {
+		width: 90px;
+		color: transparent !important;
+		background-position: 28px center;
+	}
+	.products .tabs .tab .content {
+		left: 100px;
+		padding: 20px 20px 20px 30px;
+	}
+}

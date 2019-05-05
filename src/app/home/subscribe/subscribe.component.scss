@@ -1,0 +1,109 @@
+.subscribe {
+	background-color: #657be6;
+	background-image: url('/assets/images/background/bg-element-black-white.svg'), url('/assets/images/background/bg-element-white.svg');
+	background-position: right bottom, left top;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 214px 300px, 150px 150px;
+	height: 400px;
+}
+.subscribe .container {
+	padding: 30px 200px;
+	text-align: center;		
+}
+.subscribe .subscribe_title {
+	display: inline-block;
+	padding: 40px 0;
+	width: 700px;
+}
+.subscribe .subscribe_title h3 {
+	font-size: 44px;
+	line-height: 50px;
+	color: #FFF;
+}
+.subscribe .substribe_form {
+	text-align: center;
+}
+.subscribe .substribe_form form {
+	display: inline-block;
+	width: 800px;
+}
+.subscribe .substribe_form input#name,
+.subscribe .substribe_form input#email {
+	border: 0;
+	color: #000;
+	font-size: 14px;
+	padding: 0 20px;
+	height: 50px;
+	margin: 0 5px;
+}
+.subscribe .substribe_form input#name {
+	width: 180px;
+}
+.subscribe .substribe_form input#email {
+	width: 280px;
+}
+.subscribe .substribe_form input#send {
+	color: #FFF;
+	background-color: #000;
+	width: 300px;
+	height: 50px;
+	border: 0;
+	cursor: pointer;
+}
+.subscribe .substribe_form input#send:hover {
+	opacity: .75;
+}
+.subscribe .substribe_form input#send:active {
+	opacity: 1;
+}
+
+@media only screen and (max-width: 1000px) {
+	.subscribe {
+		background-image: none;
+	}
+	.subscribe .container {
+		padding: 30px;
+		text-align: center;
+	}
+	.subscribe .substribe_form form {
+		display: inline-block;
+		width: 500px;
+	}
+	.subscribe .substribe_form input#send {
+		margin-top: 10px;
+		width: 474px;
+	}
+
+	.subscribe .subscribe_title {
+		width: 450px;
+	}
+	.subscribe .subscribe_title h3 {
+		font-size: 36px;
+		line-height: 42px;
+		color: #FFF;
+	}
+}
+
+@media only screen and (max-width: 740px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+	.subscribe {
+		height: 580px;
+	}
+	.subscribe .subscribe_title {
+		padding: 20px;
+		width: 100%;
+	}
+	.subscribe .substribe_form form {
+		display: inline-block;
+		width: 300px;
+	}
+	.subscribe .substribe_form input#name,
+	.subscribe .substribe_form input#email,
+	.subscribe .substribe_form input#send {
+		margin: 5px;
+		width: 100%;
+	}
+}

@@ -1,0 +1,16 @@
+<section class="reviews-container">
+  <h1>O que dizem sobre {{ title }}</h1>
+  <div>
+    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+      <div ngxSlickItem *ngFor="let review of reviews" class="slide">
+        <div class="slide-item" fxFlex="90">
+            <img class="item-img" src="/assets/images/aspas.svg" />
+            <p class="user-text">{{ review.text }}</p>
+            <img class="user-image" src="{{ review.image }}" />
+            <h3 class="user-name">{{ review.name }}</h3>
+            <p class="user-kind">{{ review.kind }}</p>
+        </div>
+      </div>
+    </ngx-slick-carousel>
+  </div>
+</section>

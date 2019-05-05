@@ -1,0 +1,240 @@
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99990;
+	transition: all .2s ease-in-out;
+	text-align: center;
+	white-space: nowrap;
+}
+header.big_bar {
+	height: 130px;
+	line-height: 60px;
+	padding: 30px;
+	background: transparent linear-gradient(to bottom, rgba(0,0,0,0.75), transparent);
+	transform: scale(1);
+}
+header.mini_bar {
+	height: 80px;
+	line-height: 40px;
+	padding: 15px 30px;
+	background: #FFF !important;
+	box-shadow: 0 0 4px 2px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 4px 2px rgba(0,0,0,0.1);
+}
+header.intern {
+	height: 85px;
+	padding: 12px 30px;
+	background-color: #32323C;
+}
+header div {
+	display: inline-block;
+}
+header div.logo-franq {
+	float: left;
+	background: transparent url('/assets/images/logo/franq-p1.svg') no-repeat 100% 100%;
+	transition: all .2s ease-in-out;
+	text-align: left;
+}
+header div.logo-franq div.piece {
+	background: transparent url('/assets/images/logo/franq-p2.svg') no-repeat 100% 100%;
+	width: 50%;
+	height: 50%;
+	position: relative;
+	left: 50%;
+	animation-duration: 0.7s;
+	animation-name: rotateIn;
+	-webkit-animation-name: rotateIn;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-transform: rotate3d(0, 0, 1, -90deg);
+	transform: rotate3d(0, 0, 1, -90deg);
+}
+header.mini_bar div.logo-franq div.piece {
+	top: 47%;
+}
+
+header.big_bar div.logo-franq div.piece {
+	top: 38%;
+}
+header div.logotype {
+	float: left;
+	background: transparent url('/assets/images/logo/logotype-franq-white.svg') no-repeat 100% 100%;	
+}
+header ul {
+	display: inline-block;
+	list-style: none;
+	margin: 5px 0;
+	padding: 0;
+	float: right;
+}
+header ul li {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+header ul li a {
+	margin: 0 4px;
+	padding: 14px;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 16px;
+	opacity: .7;
+}
+header ul li a:hover {
+	opacity: 1;
+}
+header.big_bar div.logo-franq {
+	width: 56px;
+	height: 56px;
+}
+header.mini_bar div.logo-franq {
+	width: 48px;
+	height: 48px;
+}
+header.big_bar div.logotype {
+    width: 180px;
+    height: 35px;
+    margin: 8px 10px 8px 24px;
+}
+header.mini_bar div.logotype {
+	background: transparent url('/assets/images/logo/logotype-franq-black.svg') no-repeat 100% 100%;	
+	width: 204px;
+	height: 34px;
+	margin: 7px 18px;
+}
+header.mini_bar ul li a {
+	color: #000;
+}
+header ul li a.cta,
+header ul li a.cta:active {
+	color: #FFF;
+	background-color: #657be6;
+	opacity: 1;
+	margin-left: 14px;
+}
+header ul li a.cta:hover {
+	background-color: #6683f4;	
+}
+header ul li a.cta:active {
+	background-color: #657be6;
+}
+header button {
+	display: none;
+	float: right;
+	background: transparent url('/assets/images/elements/menu-white.svg') center center no-repeat;
+	background-size: 32px 32px;
+	width: 48px;
+	height: 48px;
+	margin: 6px 0;
+	border: 0;
+}
+header.big_bar button {
+	margin: 6px 0;
+}
+header.mini_bar button {
+	background: transparent url('/assets/images/elements/menu-black.svg') center center no-repeat;
+	background-size: 32px 32px;
+	margin: 1px 0;
+}
+
+@media only screen and (max-width: 1000px) {
+	header ul {
+		margin: 0;
+		display: block;
+		position: fixed;
+		padding: 0;
+		right: -301px;
+		top: 0;
+		width: 300px;
+		height: 100vh;
+		background-color: #353742;
+		z-index: 99999;
+	}
+	header ul li {
+		display: block;
+		padding: 0;
+		margin: 0;
+		text-align: left;
+	}
+	header ul li a,
+	header.mini_bar ul li a {
+		line-height: 60px;
+		margin: 0;
+		padding: 5px 20px;
+		color: #FFF;
+		text-decoration: none;
+		font-size: 20px;
+		opacity: 1;
+		display: block;
+		color: #FFF;
+	}
+	header ul li a:hover {
+		color: #FFF;
+		background-color: #657be6;
+	}
+	header button {
+		display: inline-block;
+	}
+}
+
+@media only screen and (max-width: 740px) {
+	header.big_bar,
+	header.mini_bar {
+		height: 80px;
+		padding: 15px 16px;
+	}
+	header.big_bar div.logo-franq,
+	header.mini_bar div.logo-franq {
+		width: 48px;
+		height: 48px;
+	}
+	header.big_bar div.logotype,
+	header.mini_bar div.logotype {
+		width: 190px;
+		height: 30px;
+		margin: 10px 20px;
+	}
+	header button {
+		width: 42px;
+		height: 42px;
+	}
+	header.big_bar button,
+	header.mini_bar button {
+		margin: 4px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	header.big_bar,
+	header.mini_bar {
+		height: 64px;
+		padding: 16px;
+	}
+	header.big_bar div.logo-franq,
+	header.mini_bar div.logo-franq {
+		width: 32px;
+		height: 32px;
+	}
+	header.big_bar div.logotype,
+	header.mini_bar div.logotype {
+		width: 130px;
+		height: 24px;
+		margin: 4px 16px;
+	}
+	header.mini_bar div.logo-franq div.piece {
+		top: 22%;
+	}
+	
+	header.big_bar div.logo-franq div.piece {
+		top: -8%;
+	}
+	header button {
+		width: 24px;
+		height: 24px;
+	}
+	header.big_bar button,
+	header.mini_bar button {
+		margin: 5px 0;
+	}
+}
