@@ -7,6 +7,7 @@
   background: url(../../../assets/images/img-001.png) center no-repeat;
   background-size: cover;
   position: relative;
+  padding: 20px 0;
 }
 
 .franqer .btn-up {
@@ -32,35 +33,41 @@
 }
 
 .current-franqer img {
-  max-width: 205px;
+  margin-top: 20px;
+  max-width: 138px;
 }
 
 .info-page {
-  display: inline-grid;
   border-right: 1px solid #B9BDD1;
   height: 200px;
+  padding-right: 60px;
 }
 
-.info-page #info-page-title {
-  font-size: 1em;
+.info-page h4 {
+  font-size: 1.2em;
+  font-weight: 400;
   color: #32323C;
+  line-height: 24px;
 }
 
-.info-page #franqer-name {
-  font-size: 20px;
+.info-page h3 {
+  font-size: 2.5em;
   color: #32323C;
+  line-height: 33px;
 }
 
-.info-page #franqer-profession {
-  font-size: 20px;
+.info-page p {
+  font-size: 1.4em;
   color: #32323C;
+  line-height: 28px;
 }
+
 
 .info-page a {
   display: block;
   color: #5F7DEF;
   transition: 0.5s;
-  font-size: 9px;
+  font-size: 0.9em;
   transition: 0.5s;
 }
 
@@ -68,25 +75,24 @@
   opacity: 0.75;
 }
 
-.info-franqer {
-  display: inline-grid;
-}
 
 .info-franqer #info-franqer-title {
   font-size: 13px;
   color: #32323C;
 }
 
-.info-franqer span {
+.info-franqer p {
   color: #707070;
-  font-size: 8px;
+  font-size: 0.8em;
+  line-height: 8px;
+  margin-bottom: 10px !important;
   text-align: left;
 }
 
 .info-franqer a {
   color: #5F7DEF;
   transition: 0.5s;
-  font-size: 9px;
+  font-size: 0.9em;
 }
 
 .info-franqer a:hover {
@@ -98,8 +104,9 @@
   height: 200px;
 }
 
-.contact-franqer #contact-franqer-title {
-  font-size: 13px;
+.contact-franqer h4 {
+  font-size: 1.3em;
+  line-height: 26px;
   margin-bottom: 18px;
 }
 
@@ -113,7 +120,7 @@
 
 .contact-franqer .contact-item {
   width: 100%;
-  max-width: 208px;
+  max-width: 207px;
   height: 38px;
   overflow: auto;
   position: relative;
@@ -133,8 +140,8 @@
 .contact-item::before {
   content: '';
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 37px;
+  height: 37px;
 }
 
 .contact-item.phone::before {

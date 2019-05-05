@@ -5,24 +5,24 @@
       <img class="franqer-personal" [src]="franqer?.image.thumbnail" alt="">
     </div>
     <div class="info-page grid-2">
-      <span id="info-page-title">Página de</span>
-      <span id="franqer-name">{{ franqer?.name }}</span>
-      <span id="franqer-profession-">{{ franqer?.profession }}</span>
-      <img src="../../../assets/images/img-003.png" alt="">
+      <h4>Página de</h4>
+      <h3>{{ franqer?.name }}</h3>
+      <p>{{ franqer?.profession }}</p>
+      <img src="../../../assets/images/img-aval.png" alt="">
       <a href="">Ver avaliações sobre Lauro</a>
     </div>
     <div class="info-franqer grid-2">
-      <span id="info-franqer-title">Sobre {{ getFirstName(franqer?.name) }}</span>
+      <h4 id="info-franqer-title">Sobre {{ getFirstName(franqer?.name) }}</h4>
 
       <!-- TODO: fazer a trativa para o resumo do franqer -->
-      <span>Bacharel em Economia</span>
-      <span>25 anos de mercado</span>
-      <span>Ex Gerente geral Itau</span>
-      <span>Certificaçoes: CPA 10 e CPA 20</span>
+      <p>Bacharel em Economia</p>
+      <p>25 anos de mercado</p>
+      <p>Ex Gerente geral Itau</p>
+      <p>Certificaçoes: CPA 10 e CPA 20</p>
       <a href="">Saiba mais</a>
     </div>
     <div class="contact-franqer grid-2">
-      <span id="contact-franqer-title">Entre em contato com {{ getFirstName(franqer?.name) }}</span>
+      <h4>Entre em contato com {{ getFirstName(franqer?.name) }}</h4>
       <a [href]="getWhatsappLink(franqer?.phone)" target="_blank">
         <div class="contact-item phone">
           <span>{{ franqer?.phone }}</span>
