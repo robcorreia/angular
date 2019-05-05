@@ -1,6 +1,6 @@
 .openbank {
 	background-color: #FFF;
-	background-image: url('/assets/images/background/bg-gradient-white.svg'), url('/assets/images/background/bg-effects-parts.svg');
+	background-image: url('../../../../assets/images/background/products.png');
 	background-position: center center, center center;
 	background-repeat: no-repeat, no-repeat;
 	background-size: cover, cover;
@@ -8,7 +8,8 @@
 .openbank-columnA {
 	display: inline-block;
 	width: 45%;
-	padding-bottom: 180px;
+	padding-top: 60px;
+	padding-bottom: 80px;
 	padding-right: 85px;
 }
 
@@ -31,13 +32,24 @@
 	margin-top: 45px !important;
 }
 
-.openbank-columnB {
-	display: inline-block;
-	width: 55%;
+.openbank-partners h2 {
+	font-weight: 600;
+	font-size: 2.1em;
+	line-height: 42px;
+	position: relative;
 }
-.openbank-columnB img {
-	
+
+.openbank-partners h2:before {
+	content: '';
+	position: absolute;
+	width: 41px;
+	height: 2px;
+	left: 0;
+	top: -40px;
+	background: #5F7DEF;
 }
+
+
 .openbank-partners ul {
 	display: inline-block;
 	list-style: none;
@@ -49,14 +61,19 @@
 	display: inline-block;
 	padding: 10px;
 	margin: 0;
-	width: 32%;
+	width: 26%;
 }
 .openbank-partners ul li img {
 	width: 100%;
+	max-width: 104px;
 }
 .openbank .slider {
-	width: 800px;
+	width: 650px;
 	height: 260px;
+}
+
+.slider_contents {
+	text-align: left;
 }
 
 @media only screen and (max-width: 1000px) {
