@@ -56,7 +56,8 @@
     min-height: 100%;
   }
   p {
-    margin: 0 0 1em 0;
+    margin: 0 !important;
+    padding: 0;
   }
   a {
     color: #5472ed;
@@ -77,19 +78,10 @@
   h4, .h4,
   h5, .h5,
   h6, .h6 {
-    margin: 0;
-    padding: 0;
-    font-size: 2rem;
-    line-height: 2.375rem;
-    color: #343434;
-    font-weight: 400;
+    padding: 0 !important;
+    margin: 0 !important;
   }
-  b, strong, .strong {
-    font-weight: 700;
-  }
-  em, .em {
-    font-style: normal;
-  }
+  
   hr, .hr {
     -moz-box-sizing: content-box;
     box-sizing: content-box;

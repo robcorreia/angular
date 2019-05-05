@@ -12,7 +12,6 @@
   font-size: 1.8em;
   color: #191919;
   letter-spacing: 5px;
-  margin-bottom: 5px;
 }
 
 .about-content h2 {
@@ -21,7 +20,8 @@
   letter-spacing: 5px;
   font-weight: normal;
   position: relative;
-  margin-bottom: 80px;
+  margin: 0;
+  margin-bottom: 65px!important;
 }
 
 .about-content h2:after {
@@ -29,8 +29,8 @@
   position: absolute;
   background: #5F7DEF;
   height: 2px;
-  width: 77px;
-  bottom: -36px;
+  width: 51px;
+  bottom: -30px;
   left: 0;
 }
 
@@ -39,10 +39,11 @@
   font-size: 1.3em;
   color: #191919;
   line-height: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
 }
 
 img {
+  margin-top: 20px !important;
   max-width: 100%;
 }
 

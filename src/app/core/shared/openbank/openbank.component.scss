@@ -1,5 +1,4 @@
 .openbank {
-	padding: 15px;
 	background-color: #FFF;
 	background-image: url('/assets/images/background/bg-gradient-white.svg'), url('/assets/images/background/bg-effects-parts.svg');
 	background-position: center center, center center;
@@ -9,14 +8,35 @@
 .openbank-columnA {
 	display: inline-block;
 	width: 45%;
+	padding-bottom: 180px;
+	padding-right: 85px;
 }
+
+.openbank-columnA h2 {
+	font-size: 2.2em;
+	font-weight: 600;
+	line-height: 43px;
+	margin-bottom: 18px !important;
+}
+
+.openbank-columnA h3 {
+	font-size: 2.9em;
+	font-weight: 700;
+	line-height: 38px;
+}
+
+.openbank-columnA p {
+	font-size: 1.5em;
+	line-height: 25px;
+	margin-top: 45px !important;
+}
+
 .openbank-columnB {
 	display: inline-block;
-	width: 50%;
+	width: 55%;
 }
 .openbank-columnB img {
-	margin: 20px 40px 20px 0;
-	width: 100%;
+	
 }
 .openbank-partners ul {
 	display: inline-block;
